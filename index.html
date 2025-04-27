@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETCONNECT - Find Your New Best Friend</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">PETCONNECT</a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#about">About</a>
+                    <a href="#adopt">Adopt</a>
+                    <a href="#volunteer">Volunteer</a>
+                    <a href="#donate">Donate</a>
+                    <a href="#videos">Videos</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeInLeft">
+                <h1>FIND YOUR NEW BEST FRIEND</h1>
+                <p>Search adoptable pets from shelters and rescues across the country. We connect loving homes with pets in need.</p>
+                <div class="hero-buttons">
+                    <a href="#pet-gallery" class="btn primary-btn">Search Pets</a>
+                    <a href="#donate" class="btn secondary-btn">Donate Now</a>
+                </div>
+            </div>
+            <div class="hero-image animate__animated animate__fadeInRight">
+                <img src="assets/images/hero-pet.jpg" alt="Tabby cat with bright eyes">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Gallery with Filters -->
+    <section class="pet-gallery" id="pet-gallery">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInUp">FIND YOUR PERFECT MATCH</h2>
+            
+            <div class="filter-container animate__animated animate__fadeInUp">
+                <div class="filter-group">
+                    <label for="pet-type">Pet Type</label>
+                    <select id="pet-type">
+                        <option value="all">All Pets</option>
+                        <option value="dog">Dogs</option>
+                        <option value="cat">Cats</option>
+                        <option value="other">Other Pets</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="pet-age">Age</label>
+                    <select id="pet-age">
+                        <option value="all">Any Age</option>
+                        <option value="baby">Baby</option>
+                        <option value="young">Young</option>
+                        <option value="adult">Adult</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="pet-size">Size</label>
+                    <select id="pet-size">
+                        <option value="all">Any Size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                
+                <button class="btn filter-btn">Apply Filters</button>
+            </div>
+            
+            <div class="gallery-grid animate__animated animate__fadeIn">
+                <div class="pet-card" data-type="dog" data-age="young" data-size="large">
+                    <div class="pet-image">
+                        <img src="assets/images/dog1.jpg" alt="Yellow Labrador dog portrait">
+                        <div class="pet-badge">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Buddy</h3>
+                        <p>Labrador Retriever • 2 years • Male</p>
+                        <p class="pet-location"><img src="assets/icons/location-icon.svg" alt="Location"> San Francisco, CA</p>
+                        <a href="#" class="btn pet-btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="pet-card" data-type="cat" data-age="adult" data-size="small">
+                    <div class="pet-image">
+                        <img src="assets/images/cat1.jpg" alt="Tabby cat portrait">
+                        <div class="pet-badge">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Luna</h3>
+                        <p>Domestic Shorthair • 3 years • Female</p>
+                        <p class="pet-location"><img src="assets/icons/location-icon.svg" alt="Location"> Los Angeles, CA</p>
+                        <a href="#" class="btn pet-btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="pet-card" data-type="dog" data-age="baby" data-size="medium">
+                    <div class="pet-image">
+                        <img src="assets/images/dog2.jpg" alt="Terrier mix dog portrait">
+                        <div class="pet-badge">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Max</h3>
+                        <p>Terrier Mix • 8 months • Male</p>
+                        <p class="pet-location"><img src="assets/icons/location-icon.svg" alt="Location"> Seattle, WA</p>
+                        <a href="#" class="btn pet-btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="pet-card" data-type="dog" data-age="senior" data-size="medium">
+                    <div class="pet-image">
+                        <img src="assets/images/dog3.jpg" alt="Beagle dog portrait">
+                        <div class="pet-badge">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Charlie</h3>
+                        <p>Beagle • 8 years • Male</p>
+                        <p class="pet-location"><img src="assets/icons/location-icon.svg" alt="Location"> Chicago, IL</p>
+                        <a href="#" class="btn pet-btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="pet-card" data-type="cat" data-age="young" data-size="small">
+                    <div class="pet-image">
+                        <img src="assets/images/cat2.jpg" alt="Siamese cat portrait">
+                        <div class="pet-badge">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Bella</h3>
+                        <p>Siamese • 1 year • Female</p>
+                        <p class="pet-location"><img src="assets/icons/location-icon.svg" alt="Location"> New York, NY</p>
+                        <a href="#" class="btn pet-btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="pet-card" data-type="other" data-age="young" data-size="small">
+                    <div class="pet-image">
+                        <img src="assets/images/rabbit1.jpg" alt="Rabbit portrait">
+                        <div class="pet-badge">Available</div>
+                    </div>
+                    <div class="pet-info">
+                        <h3>Thumper</h3>
+                        <p>Holland Lop • 1 year • Male</p>
+                        <p class="pet-location"><img src="assets/icons/location-icon.svg" alt="Location"> Austin, TX</p>
+                        <a href="#" class="btn pet-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <a href="#" class="btn view-more-btn">View More Pets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Pets Carousel -->
+    <section class="featured-pets">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInUp">FEATURED PETS</h2>
+            <p class="section-subtitle animate__animated animate__fadeInUp">These adorable pets have been waiting for their forever homes for a while. Help them find a loving family!</p>
+            
+            <div class="carousel-container animate__animated animate__fadeIn">
+                <button class="carousel-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="carousel-track-container">
+                    <ul class="carousel-track" id="petCarousel">
+                        <li class="carousel-slide">
+                            <div class="featured-pet-card">
+                                <img src="assets/images/featured-dog1.jpg" alt="Featured dog">
+                                <div class="featured-pet-info">
+                                    <h3>Rocky</h3>
+                                    <p>German Shepherd • 4 years</p>
+                                    <p>Waiting for 8 months</p>
+                                    <a href="#" class="btn featured-btn">Meet Rocky</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="featured-pet-card">
+                                <img src="assets/images/featured-cat1.jpg" alt="Featured cat">
+                                <div class="featured-pet-info">
+                                    <h3>Whiskers</h3>
+                                    <p>Maine Coon • 3 years</p>
+                                    <p>Waiting for 6 months</p>
+                                    <a href="#" class="btn featured-btn">Meet Whiskers</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="featured-pet-card">
+                                <img src="assets/images/featured-dog2.jpg" alt="Featured dog">
+                                <div class="featured-pet-info">
+                                    <h3>Daisy</h3>
+                                    <p>Pitbull Mix • 2 years</p>
+                                    <p>Waiting for 10 months</p>
+                                    <a href="#" class="btn featured-btn">Meet Daisy</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="featured-pet-card">
+                                <img src="assets/images/featured-cat2.jpg" alt="Featured cat">
+                                <div class="featured-pet-info">
+                                    <h3>Oliver</h3>
+                                    <p>Tabby • 5 years</p>
+                                    <p>Waiting for 7 months</p>
+                                    <a href="#" class="btn featured-btn">Meet Oliver</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="featured-pet-card">
+                                <img src="assets/images/featured-dog3.jpg" alt="Featured dog">
+                                <div class="featured-pet-info">
+                                    <h3>Cooper</h3>
+                                    <p>Golden Retriever • 1 year</p>
+                                    <p>Waiting for 5 months</p>
+                                    <a href="#" class="btn featured-btn">Meet Cooper</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button class="carousel-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="carousel-nav">
+                <button class="carousel-indicator active" data-slide="0"></button>
+                <button class="carousel-indicator" data-slide="1"></button>
+                <button class="carousel-indicator" data-slide="2"></button>
+                <button class="carousel-indicator" data-slide="3"></button>
+                <button class="carousel-indicator" data-slide="4"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Adopt Section -->
+    <section class="why-adopt" id="about">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInUp">WHY ADOPT WITH US?</h2>
+            <div class="why-adopt-content">
+                <div class="why-adopt-text animate__animated animate__fadeInLeft">
+                    <p>PetConnect is dedicated to helping you find the perfect companion. We work with shelters and rescues nationwide to give pets a second chance at a loving home.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To connect homeless pets with loving families and reduce the number of animals in shelters through adoption, education, and community outreach.</p>
+                    
+                    <h3>Our Impact</h3>
+                    <div class="impact-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="adoptionsCount">0</span>
+                            <span class="stat-label">Adoptions</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="sheltersCount">0</span>
+                            <span class="stat-label">Partner Shelters</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="statesCount">0</span>
+                            <span class="stat-label">States</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="why-adopt-image animate__animated animate__fadeInRight">
+                    <img src="assets/images/why-adopt.jpg" alt="Happy adopted pet with owner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="adopt">
+        <div class="container">
+            <div class="cta-grid">
+                <div class="cta-card animate__animated animate__fadeInUp">
+                    <div class="cta-icon">
+                        <img src="assets/icons/paw-icon.svg" alt="Paw icon">
+                    </div>
+                    <h3>ADOPT A PET</h3>
+                    <p>Learn more about our adoption process and find your perfect companion. We have dogs, cats, and other pets waiting for their forever homes.</p>
+                    <a href="#" class="btn cta-btn">Learn More</a>
+                </div>
+                
+                <div class="cta-card animate__animated animate__fadeInUp" data-delay="200">
+                    <div class="cta-icon">
+                        <img src="assets/icons/heart-icon.svg" alt="Heart icon">
+                    </div>
+                    <h3>SUPPORT OUR MISSION</h3>
+                    <p>There are many ways you can help our organization continue its life-saving work. Every contribution makes a difference in the lives of homeless pets.</p>
+                    <a href="#" class="btn cta-btn">Support Us</a>
+                </div>
+                
+                <div class="cta-card animate__animated animate__fadeInUp" data-delay="400">
+                    <div class="cta-icon">
+                        <img src="assets/icons/form-icon.svg" alt="Form icon">
+                    </div>
+                    <h3>BECOME A VOLUNTEER</h3>
+                    <p>Sign up to volunteer at a shelter or foster a pet in need. Your time and compassion can help animals waiting for their forever homes.</p>
+                    <a href="#" class="btn cta-btn">Volunteer Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section" id="videos">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInUp">PET STORIES</h2>
+            <p class="section-subtitle animate__animated animate__fadeInUp">Watch heartwarming videos of successful adoptions and pet care tips</p>
+            
+            <div class="video-grid">
+                <div class="video-card animate__animated animate__fadeIn">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Pet Adoption Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Max's Journey Home</h3>
+                        <p>Watch Max's incredible transformation from shelter dog to beloved family member.</p>
+                    </div>
+                </div>
+                
+                <div class="video-card animate__animated animate__fadeIn" data-delay="200">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Pet Care Tips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Essential Pet Care Tips</h3>
+                        <p>Learn the basics of caring for your newly adopted pet with these helpful tips.</p>
+                    </div>
+                </div>
+                
+                <div class="video-card animate__animated animate__fadeIn" data-delay="400">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Shelter Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Tour Our Shelter</h3>
+                        <p>Take a virtual tour of our main shelter facility and meet some of our adoptable pets.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <a href="#" class="btn view-more-btn">View More Videos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInUp">SUCCESS STORIES</h2>
+            
+            <div class="story-card animate__animated animate__fadeIn">
+                <div class="story-image">
+                    <img src="assets/images/success-story1.jpg" alt="Happy dog with new owner">
+                </div>
+                <div class="story-content">
+                    <h3>Max Found His Forever Home</h3>
+                    <p>After 6 months in the shelter, Max, a 3-year-old Labrador mix, was adopted by the Johnson family. Now he enjoys long walks in the park and has become best friends with their 7-year-old son.</p>
+                    <p>"We can't imagine our lives without Max now," says Sarah Johnson. "He's brought so much joy and love into our home. Adopting him was the best decision we ever made."</p>
+                    <a href="#" class="btn story-btn">Read More</a>
+                </div>
+            </div>
+            
+            <div class="story-card animate__animated animate__fadeIn">
+                <div class="story-image">
+                    <img src="assets/images/success-story2.jpg" alt="Cat in new home">
+                </div>
+                <div class="story-content">
+                    <h3>Luna's Second Chance</h3>
+                    <p>Luna was rescued from a difficult situation and was very shy when she arrived at our shelter. After patient care from our volunteers, she blossomed into a loving companion and found her perfect match with Sarah, a first-time cat owner.</p>
+                    <p>"Luna was so scared when I first met her," Sarah recalls. "But the shelter staff helped me understand how to gain her trust. Now she sleeps on my pillow every night and greets me at the door when I come home. She's completely transformed."</p>
+                    <a href="#" class="btn story-btn">Read More</a>
+                </div>
+            </div>
+            
+            <div class="story-card animate__animated animate__fadeIn">
+                <div class="story-image">
+                    <img src="assets/images/success-story3.jpg" alt="Senior dog with new family">
+                </div>
+                <div class="story-content">
+                    <h3>Charlie's Golden Years</h3>
+                    <p>At 10 years old, Charlie the Beagle had been overlooked by many potential adopters due to his age. But when the Martinez family met him, they knew he was the perfect addition to their home.</p>
+                    <p>"We specifically wanted to adopt a senior dog," explains Miguel Martinez. "They have so much love to give and deserve to spend their golden years in a comfortable, loving home. Charlie has been such a blessing to our family."</p>
+                    <a href="#" class="btn story-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation-section" id="donate">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInUp">SUPPORT OUR CAUSE</h2>
+            <p class="section-subtitle animate__animated animate__fadeInUp">Your donation helps us rescue, care for, and find homes for pets in need</p>
+            
+            <div class="donation-options">
+                <div class="donation-card animate__animated animate__fadeIn">
+                    <div class="donation-icon">
+                        <img src="assets/icons/heart-icon.svg" alt="One-time donation">
+                    </div>
+                    <h3>One-Time Donation</h3>
+                    <p>Make a one-time gift to help pets in need. Every dollar makes a difference in the lives of homeless animals.</p>
+                    <div class="donation-amounts">
+                        <button class="amount-btn">$25</button>
+                        <button class="amount-btn">$50</button>
+                        <button class="amount-btn">$100</button>
+                        <button class="amount-btn">$250</button>
+                        <button class="amount-btn custom-amount">Custom</button>
+                    </div>
+                    <a href="#" class="btn donation-btn">Donate Now</a>
+                </div>
+                
+                <div class="donation-card animate__animated animate__fadeIn" data-delay="200">
+                    <div class="donation-icon">
+                        <img src="assets/icons/recurring-icon.svg" alt="Monthly donation">
+                    </div>
+                    <h3>Monthly Giving</h3>
+                    <p>Become a monthly donor and provide ongoing support for animals in need. Your sustained commitment helps us plan for the future.</p>
+                    <div class="donation-amounts">
+                        <button class="amount-btn">$10/mo</button>
+                        <button class="amount-btn">$20/mo</button>
+                        <button class="amount-btn">$50/mo</button>
+                        <button class="amount-btn">$100/mo</button>
+                        <button class="amount-btn custom-amount">Custom</button>
+                    </div>
+                    <a href="#" class="btn donation-btn">Become a Monthly Donor</a>
+                </div>
+            </div>
+            
+            <div class="other-ways">
+                <h3 class="animate__animated animate__fadeInUp">Other Ways to Help</h3>
+                <div class="ways-grid">
+                    <div class="way-card animate__animated animate__fadeIn">
+                        <h4>Sponsor a Pet</h4>
+                        <p>Cover the care costs for a specific animal until they find their forever home.</p>
+                        <a href="#" class="btn way-btn">Learn More</a>
+                    </div>
+                    
+                    <div class="way-card animate__animated animate__fadeIn" data-delay="100">
+                        <h4>Corporate Matching</h4>
+                        <p>Double your impact! Many employers match charitable donations made by their employees.</p>
+                        <a href="#" class="btn way-btn">Check Eligibility</a>
+                    </div>
+                    
+                    <div class="way-card animate__animated animate__fadeIn" data-delay="200">
+                        <h4>In-Kind Donations</h4>
+                        <p>Donate supplies from our wishlist to help care for animals in our shelters.</p>
+                        <a href="#" class="btn way-btn">View Wishlist</a>
+                    </div>
+                    
+                    <div class="way-card animate__animated animate__fadeIn" data-delay="300">
+                        <h4>Legacy Giving</h4>
+                        <p>Include PetConnect in your estate planning to create a lasting impact.</p>
+                        <a href="#" class="btn way-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">Stay Updated</h2>
+            <p class="animate__animated animate__fadeInUp">Subscribe to our newsletter to get updates on new pets available for adoption, success stories, and upcoming events.</p>
+            <form class="newsletter-form animate__animated animate__fadeIn">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="volunteer">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInUp">HOW IT WORKS</h2>
+            <div class="steps-grid">
+                <div class="step-card animate__animated animate__fadeIn">
+                    <div class="step-icon">
+                        <img src="assets/icons/search-icon.svg" alt="Search icon">
+                    </div>
+                    <div class="step-number">1</div>
+                    <h3>Search</h3>
+                    <p>Browse our database of pets from shelters and rescues across the country. Filter by species, age, size, and location to find your perfect match.</p>
+                </div>
+                
+                <div class="step-card animate__animated animate__fadeIn" data-delay="200">
+                    <div class="step-icon">
+                        <img src="assets/icons/meet-icon.svg" alt="Meet icon">
+                    </div>
+                    <div class="step-number">2</div>
+                    <h3>Meet</h3>
+                    <p>Schedule a meeting with the pet you're interested in adopting. Spend time getting to know them and see if you're a good match for each other.</p>
+                </div>
+                
+                <div class="step-card animate__animated animate__fadeIn" data-delay="400">
+                    <div class="step-icon">
+                        <img src="assets/icons/home-icon.svg" alt="Home icon">
+                    </div>
+                    <div class="step-number">3</div>
+                    <h3>Adopt</h3>
+                    <p>Complete the adoption process and welcome your new best friend home. Our team will provide resources and support to ensure a smooth transition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeInUp">CONTACT US</h2>
+            <div class="contact-container">
+                <div class="contact-info animate__animated animate__fadeInLeft">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions about adoption or want to learn more about our organization? Reach out to us!</p>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <img src="assets/icons/email-icon.svg" alt="Email icon">
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@petconnect.org</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <img src="assets/icons/phone-icon.svg" alt="Phone icon">
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <img src="assets/icons/location-icon.svg" alt="Location icon">
+                        </div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>123 Pet Avenue<br>Animal City, AC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="assets/icons/facebook-icon.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/icons/instagram-icon.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="assets/icons/twitter-icon.svg" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container animate__animated animate__fadeInRight">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PETCONNECT</h3>
+                    <p>Connecting pets with loving homes since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><img src="assets/icons/facebook-icon.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/icons/instagram-icon.svg" alt="Instagram"></a>
+                        <a href="#"><img src="assets/icons/twitter-icon.svg" alt="Twitter"></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#adopt">Adoption Process</a></li>
+                        <li><a href="#volunteer">Volunteer</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Pet Care Tips</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support Us</h3>
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Sponsor a Pet</a></li>
+                        <li><a href="#">Fundraising</a></li>
+                        <li><a href="#">Corporate Partnerships</a></li>
+                        <li><a href="#">Volunteer Opportunities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PETCONNECT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
